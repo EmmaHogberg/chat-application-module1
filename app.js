@@ -22,7 +22,7 @@ peer.on("error", (errormessage) => {
 const listPeersButtonEl = document.querySelector(".list-all-peers-button");
 const peersEl = document.querySelector(".peers");
 
-// First, with forEach
+// First code with forEach day 1
 // listPeersButtonEl.addEventListener("click", () => {
 //   peer.listAllPeers((peers) => {
 //     const list = document.createElement("ul");
@@ -39,7 +39,7 @@ const peersEl = document.querySelector(".peers");
 //   });
 // });
 
-// Second and final with map
+// Second and final code with map
 listPeersButtonEl.addEventListener("click", () => {
   peer.listAllPeers((peers) => {
     peersEl.innerHTML = "";
