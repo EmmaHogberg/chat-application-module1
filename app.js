@@ -42,23 +42,6 @@
     console.error(errorMessage);
   });
 
-  // First code with forEach day 1
-  // listPeersButtonEl.addEventListener("click", () => {
-  //   peer.listAllPeers((peers) => {
-  //     const list = document.createElement("ul");
-  //     peersEl.append(list);
-
-  //     peers.forEach((element) => {
-  //       const listPeer = document.createElement("li");
-  //       list.append(listPeer);
-
-  //       const peerIdButton = document.createElement("button");
-  //       peerIdButton.innerText = element;
-  //       listPeer.append(peerIdButton);
-  //     });
-  //   });
-  // });
-
   // Second and final code with map
   listPeersButtonEl.addEventListener("click", () => {
     peer.listAllPeers((peers) => {
